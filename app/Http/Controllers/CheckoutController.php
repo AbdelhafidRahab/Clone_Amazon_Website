@@ -14,7 +14,7 @@ use App\Models\Order;
 class CheckoutController extends Controller
 {
     public function index() {
-        $stripe = new \Stripe\StripeClient('sk_test_51PssqR2NDPfXQH6Q2PVIE8mOJ1Ag8DcrQfnJ2gMYLZNMX6IZW2OtmaegkNtuipYWbFQ935RrVj9Pg0WQw7MezRzy008qkhxKjc');
+        $stripe = new \Stripe\StripeClient('');
 
         $order = Order::where('user_id',session('loginID'))->where('payment_intent', null)->first();
         $intent = null;
