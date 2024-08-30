@@ -18,7 +18,7 @@ const props = {
 const client_secret = document.getElementById('client_secret').value;
 
 // This is your test publishable API key.
-var stripe = Stripe("pk_test_51PssqR2NDPfXQH6Qe70Jkxnv2YLAiCOuM4SUrNFG3Qqb1q0LCiyzMghOsWiOUFEzd3crGk7X7qWzni1DWSo5m44v00BYfqRBj6");
+var stripe = Stripe("");
 
 var elements = stripe.elements();
 var style = {
